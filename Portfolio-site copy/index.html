@@ -26,8 +26,8 @@
 		<!-- Header -->
 			<section id="header">
 				<header>
-					<span class="image avatar"><img src="images/avatar.jpg" alt="" /></span>
-					<h1 id="logo"><a href="#">James Baptiste</a></h1>
+					<span class="image avatar"><a href="/index.html"><img src="images/avatar.jpg" alt="" /></a></span>
+					<h1 id="logo"><a href="/index.html">James Baptiste</a></h1>
 					<p>Software Developer<br />
 						<a href="assets/JamesBaptisteResume.pdf" target="_blank" download><button type="button" class="btn"><i class="fa fa-download"></i> Download Resume</button></a>
 					<!-- and now I'm totally cray</p> -->
@@ -593,7 +593,8 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 					</section> -->
 
 			</div>
-
+<!-- button to go back to top of page -->
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
@@ -603,5 +604,26 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
+			<script>
+				//Get the button
+				var mybutton = document.getElementById("myBtn");
+
+				// When the user scrolls down 20px from the top of the document, show the button
+				window.onscroll = function () { scrollFunction() };
+
+				function scrollFunction() {
+					if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+						mybutton.style.display = "block";
+					} else {
+						mybutton.style.display = "none";
+					}
+				}
+
+				// When the user clicks on the button, scroll to the top of the document
+				function topFunction() {
+					document.body.scrollTop = 0;
+					document.documentElement.scrollTop = 0;
+				}
+			</script>
 	</body>
 </html>
