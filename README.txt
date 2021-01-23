@@ -1,4 +1,3 @@
-
 # Pig Game
 
 <!-- PROJECT LOGO -->
