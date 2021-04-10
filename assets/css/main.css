@@ -1201,6 +1201,7 @@ body.is-preload #main {
 
 #wrapper > * {
   z-index: 1;
+  margin: auto;
 }
 
 #wrapper:before {
