@@ -116,11 +116,6 @@ body {
   line-height: 1;
 }
 
-ul li {
-  background: #cce5ff;
-  margin: 5px;
-}
-
 ol,
 ul {
   list-style: none;
@@ -1206,7 +1201,6 @@ body.is-preload #main {
 
 #wrapper > * {
   z-index: 1;
-  margin: auto;
 }
 
 #wrapper:before {
@@ -1222,9 +1216,4 @@ body.is-preload #main {
 
 body.is-ie #wrapper {
   height: 100%;
-}
-
-ul {
-  margin: 50px;
-  color: green;
 }
